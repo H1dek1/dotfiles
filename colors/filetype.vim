@@ -1,0 +1,1 @@
+/home/hideki/dotfiles/filetype.vim
