@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ~/.vim
+
 DOT_FILES=(.vimrc .tmux.conf)
 
 for file in ${DOT_FILES[@]}
