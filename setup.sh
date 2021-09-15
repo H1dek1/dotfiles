@@ -10,4 +10,5 @@ do
 done
 
 ln -sf ~/dotfiles/colors ~/.vim/colors
+ln -sf ~/dotfiles/autoload ~/.vim/autoload
 ln -sf ~/dotfiles/filetype.vim ~/.vim/filetype.vim
