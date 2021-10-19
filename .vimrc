@@ -2,7 +2,7 @@ syntax enable
 
 set t_Co=256
 
-colorscheme molokai
+colorscheme deus
 set bg=dark
 
 "行番号表示
