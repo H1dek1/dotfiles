@@ -1,8 +1,36 @@
+if has('vim_starting')
+   " 初回起動時のみruntimepathにneobundleのパスを指定する
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" NeoBundleを初期化
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" インストールするプラグインをここに記述
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-surround'
+
+
+" for update => :NeoBundleUpdate vimfiler
+" for delete => :NeoBundleClean vimfiler
+
+call neobundle#end()
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundleCheck
+" ファイルタイプ別のプラグイン/インデントを有効にする
+filetype plugin indent on
+
+" ============================
+" for NerdTree
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
 syntax enable
 
 set t_Co=256
 
-colorscheme molokai
+colorscheme tequila-sunrise
 set bg=dark
 
 "行番号表示

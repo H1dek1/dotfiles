@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p ~/.vim/bundle/
+
 DOT_FILES=(.vimrc .tmux.conf)
 
 for file in ${DOT_FILES[@]}
