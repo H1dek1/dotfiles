@@ -31,6 +31,7 @@ syntax enable
 set t_Co=256
 
 colorscheme tequila-sunrise
+
 set bg=dark
 
 "行番号表示
